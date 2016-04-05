@@ -5,20 +5,36 @@
  */
 
 let assert = require('assert')
-let strippy = require('./')
+let s = require('./')
 
 /**
  * Tests
  */
 
 describe('strippy(str)', function() {
-  let str = `
-    a
-    b
-    c
-        d
+  it('should support basic newlines and breaks', function() {
+    let str = `
+      a
+      b
+      c
+          d
 
-    e
-  `
-  assert.equal(strippy(str), 'a b c     d\n\ne')
+      e
+    `
+    assert.equal(s(str), 'a b c     d\n\ne')
+  })
+
+  it('should work with the example', function() {
+    let str = s(`
+      this
+      is a
+      multiline
+
+      with
+      double
+      breaks
+      preserved.
+    `)
+    assert.equal(str, 'this is a multiline\n\nwith double breaks preserved.')
+  })
 })
