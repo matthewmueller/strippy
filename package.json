@@ -1,0 +1,19 @@
+{
+  "name": "strippy",
+  "version": "0.0.1",
+  "description": "strip indents and trims",
+  "keywords": [],
+  "author": "Matthew Mueller <mattmuelle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MatthewMueller/strippy.git"
+  },
+  "dependencies": {
+    "strip-indent": "1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
