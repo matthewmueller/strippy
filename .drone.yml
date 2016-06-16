@@ -1,4 +1,4 @@
 build:
-  image: nodejs
+  image: node:6.2.1
   commands:
     - make test
