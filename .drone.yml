@@ -1,0 +1,4 @@
+build:
+  image: nodejs
+  commands:
+    - make test

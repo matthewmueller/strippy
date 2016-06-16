@@ -12,8 +12,7 @@
     "strip-indent": "1.0.1"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "2.5.3"
   },
   "main": "index"
 }
